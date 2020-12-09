@@ -21,3 +21,11 @@ li {
   color: white;
   font-size: larger;
 }
+
+a {
+  display: inline;
+  text-align: center;
+  padding: 30px;
+  color: white;
+  font-size: larger;
+}
