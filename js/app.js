@@ -8,7 +8,7 @@ var allStores = [];
 // var paris = document.getElementById('paris');
 // var lima = document.getElementById('lima');
 
-var table = document.createElement('table');
+var table = document.getElementById('table');
 
 console.log(table);
 function Store(name, min, max, avg) {
@@ -43,9 +43,9 @@ Store.prototype.renderRow = function () {
   thElement.textContent = this.name;
   trElement.appendChild(thElement);
 
-  for (var i = 0; i < this.hourlySales.length; i++) {
+  for (var i = 0; i < hours.length; i++) {
     var tdElement = document.createElement('td');
-    tdElement.textContext = this.hourlySales[i];
+    tdElement.textContent = this.hourlySales[i];
     trElement.appendChild(tdElement);
   }
   tdElement = document.createElement('td');
@@ -53,10 +53,35 @@ Store.prototype.renderRow = function () {
   trElement.appendChild(tdElement);
 };
 
-var seattleStore = new Store('Seattle', 23, 65, 6.3);
-// var tokyoStore = new Store('Tokyo', 3, 24, 1.2);
-// var DubaiStore = new Store('Dubai', 11, 38, 37);
-// var parisStore = new Store('Paris', 20, 38, 2.3);
-// var limaStore = new Store('Lima', 2, 16, 4.6);
+//Header
+function renderHeader() {
+  var trElement = document.createElement('tr');
+  table.appendChild(trElement);
 
+  var thElement = document.createElement('th');
+  thElement.textContent = ('name');
+  trElement.appendChild(thElement);
+
+  for (var i = 0; i < hours.length; i++) {
+    var tdElement = document.createElement('td');
+    tdElement.textContent = hours[i];
+    trElement.appendChild(tdElement);
+  }
+  tdElement = document.createElement('td');
+  tdElement.textContent = ('total');
+  trElement.appendChild(tdElement);
+}
+
+
+var seattleStore = new Store('Seattle', 23, 65, 6.3);
+var tokyoStore = new Store('Tokyo', 3, 24, 1.2);
+var DubaiStore = new Store('Dubai', 11, 38, 37);
+var parisStore = new Store('Paris', 20, 38, 2.3);
+var limaStore = new Store('Lima', 2, 16, 4.6);
+
+renderHeader();
 seattleStore.renderRow();
+tokyoStore.renderRow();
+DubaiStore.renderRow();
+parisStore.renderRow();
+limaStore.renderRow();

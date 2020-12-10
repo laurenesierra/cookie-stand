@@ -29,3 +29,8 @@ a {
   color: white;
   font-size: larger;
 }
+
+td, th {
+  padding: 5px;
+  border: solid 5px white;
+}
