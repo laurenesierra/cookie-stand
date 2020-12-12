@@ -22,6 +22,33 @@ body {
   background-color: rgb(114, 172, 223);
 }
 
+h2 {
+  font-size: larger;
+  font-weight: 600;
+  font-family: cursive;
+  margin-left: 20px;
+  margin-top: 40px;
+  color: rgb(43, 41, 41);
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: larger;
+  font-weight:500;
+  margin-left: 20px;
+  margin-right: 20px;
+  color:rgb(43, 42, 42);
+}
+
+#centerp {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 100px;
+  font-size: larger;
+  font-weight:500;
+}
+
 legend {
   font-size: 20px;
   margin-top: 60px;
@@ -45,9 +72,12 @@ button {
   color: white;
 }
 
-table {
+#table {
   margin-top: 20px;
   margin-bottom: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(34, 34, 34);
+  color: white;
 }
 
 li {
@@ -68,21 +98,46 @@ td, th {
   border: solid 5px white;
 }
 
-main image {
+section img {
+  margin: 50px;
   width: 300px;
-  height: 200px;
-  margin-left: 500px;
-  
+  height: 300px;
+  margin-left: 75px;
+}
+
+button {
+margin: 30px;
+  float: right;
+  width: 190px;
+  height: 70px;
+  background-color: white;
+  font-weight: 20px;
+  font-size: larger;
+  color:rgb(34, 34, 34);
+}
+
+#family {
+  width: 700px;
+  height: 500px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+#fish {
+  margin-left: 75px;
+  margin-bottom: 50px;
 }
 
 footer {
   background-color: rgb(34, 34, 34);
   height: 400px;
-  margin-top: 800px;  
+  margin-top: 200px;  
 } 
 
 footer section {
   display: inline-block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 footer h3 {
@@ -90,6 +145,7 @@ footer h3 {
   color: white;
   font-size: 25px;
   text-decoration: underline;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
